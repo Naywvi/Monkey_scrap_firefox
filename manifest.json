@@ -1,0 +1,37 @@
+{
+
+    "manifest_version": 2,
+    "name": "Monkey scrapping",
+    "version": "1.0",
+  
+    "description": "***",
+    "homepage_url": "https://github.com/Naywvi/scrapping-app-firefox",
+  
+    "icons": {
+      "96": "./src/assets/icons/hero.png"
+    },
+
+    "permissions": [
+        "activeTab",
+        "storage",
+        "<all_urls>"
+      ],
+
+      "browser_action": {
+        "default_icon": "./src/assets/icons/hero.png",
+        "default_title": "Monkey scrapping",
+        "default_popup": "./src/popup/index.html"
+      },
+
+    "content_scripts": [
+      {
+        "matches": [
+            "https://*/*",
+            "http://*/*"
+    ],
+        "js": ["index.js"]
+      }
+    ]
+  
+  }
+  
