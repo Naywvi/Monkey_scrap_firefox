@@ -4,7 +4,7 @@
     "name": "Monkey scrapping",
     "version": "1.0",
   
-    "description": "***",
+    "description": "Scrap all websites with Classname",
     "homepage_url": "https://github.com/Naywvi/scrapping-app-firefox",
   
     "icons": {
